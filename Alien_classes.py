@@ -1,4 +1,4 @@
-
+import json 
 
 class Alien_names:
     def __init__(self, Alien_builder):
@@ -35,6 +35,7 @@ class Alien_builder:
 class Director:
     def __init__(self, builder):
         self.builder = builder
+        self.data = {}
 
     def build_alien(self, first_name, second_name, third_name):
         return self.builder.get_first_name(first_name).get_second_name(second_name).get_third_name(third_name).build()
